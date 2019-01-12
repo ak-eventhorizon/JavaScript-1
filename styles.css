@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 10px 0 0 10px;
+}
+
+/*полоски с буквами и цифрами по краям*/
+
+.top {
+    width: 602px;
+    height: 49px;
+    position: absolute;
+    margin: 0 0 0 49px;
+    display: flex;
+}
+
+.top .letter {
+    width: 77px;
+    height: 34px;
+    padding: 15px 0 0 0;
+    transform: rotate(180deg);
+}
+
+.bottom {
+    width: 602px;
+    height: 49px;
+    position: absolute;
+    left: 11px;
+    top: 662px;
+    margin: 0 0 0 49px;
+    display: flex;
+}
+
+.bottom .letter {
+    width: 77px;
+    height: 34px;
+    padding: 15px 0 0 0;
+}
+
+.left {
+    width: 49px;
+    height: 602px;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    margin: 49px 0 0 0; 
+}
+
+.left .letter {
+    width: 34px;
+    height: 46px;
+    padding: 29px 0 0 7px;
+}
+
+.right {
+    width: 49px;
+    height: 602px;
+    position: absolute;
+    left: 662px;
+    top: 11px;
+    margin: 49px 0 0 0;
+}
+
+.right .letter {
+    width: 34px;
+    height: 46px;
+    padding: 29px 7px 0 0;
+    transform: rotate(180deg);
+}
+
+h4 {
+    text-align: center;
+}
+
+/* доска с клетками*/
+
+.board {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 49px 0 0 49px;
+}
+
+.row_num {
+    height: 75px;
+    width: 600px;
+    display: flex;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 49px;
+}
+
+/*разлиновка на черно-белые клетки*/
+
+.row_num:nth-child(odd) .cell:nth-child(odd) {
+    background-color: white;
+}
+
+.row_num:nth-child(odd) .cell:nth-child(even) {
+    background-color: grey;
+}
+
+.row_num:nth-child(even) .cell:nth-child(even) {
+    background-color: white;
+}
+
+.row_num:nth-child(even) .cell:nth-child(odd) {
+    background-color: grey;
+}
+
+
+/*Переворот черных фигур*/
+
+/*
+.board .row_num:nth-child(1) .cell {
+    transform: rotate(180deg);
+}
+
+.board .row_num:nth-child(2) .cell {
+    transform: rotate(180deg);
+}
+*/
+
