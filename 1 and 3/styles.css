@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-width: 816px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.big_picture_and_nav {
+    min-height: 484px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left, #right {
+    width: 80px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: darkgray;
+}
+
+#left {
+    background-color: lightgrey;
+}
+
+#right {
+    background-color: lightgrey;
+}
