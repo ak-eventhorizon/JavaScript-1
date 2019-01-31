@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-width: 702px;
+}
+
+.products {
+    float: left;
+    min-width: 400px;
+    min-height: 100px;
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+
+.product {
+    min-height: 100px;
+    border-bottom: 1px solid gray;
+}
+
+.product > div {
+    text-align: center;
+}
+
+.product .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product .discription {
+    min-height: 40px;
+}
+
+.product .buyButton {
+    font-size: 20px;
+    background-color: palegoldenrod;
+}
+
+.product .buyButton:hover {
+    background-color: gold;
+}
+
+.basket {
+    float: right;
+    min-width: 300px;
+    min-height: 100px;
+    background-color: palegoldenrod;
+    border: 1px solid gray;
+}
+
+.buy {
+    min-height: 20px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.buy:nth-child(2) {
+    border-top: 1px solid gray;
+}
+
+.basket h2 {
+    text-align: center;
+}
